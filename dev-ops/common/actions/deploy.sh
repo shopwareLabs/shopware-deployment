@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git clone --branch __TAG__ git@github.com:shopware-blog/shopware-deployment-installation.git __CHECKOUT_DIRECTORY__/__ENV__-__TAG__
+git clone --branch __TAG__ __GIT_REPO__ __CHECKOUT_DIRECTORY__/__ENV__-__TAG__
 
 cp .env-__ENV__ __CHECKOUT_DIRECTORY__/__ENV__-__TAG__/.env
 

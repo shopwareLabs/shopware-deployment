@@ -10,7 +10,7 @@ paths:
   - dev-ops/common/actions
 
 const:
-  DB_USER: "app"
+  GIT_REPO: "git@github.com:shopware-blog/shopware-deployment-installation.git"
   CHECKOUT_DIRECTORY: '/var/www/cluster.eilomat.de'
 
 dynamic:
