@@ -1,0 +1,29 @@
+header: |
+   shopware.blog
+         _                                             _     _
+     ___| |__   ___  _ ____      ____ _ _ __ ___      | |__ | | ___   __ _
+    / __| '_ \ / _ \| '_ \ \ /\ / / _` | '__/ _ \_____| '_ \| |/ _ \ / _` |
+    \__ \ | | | (_) | |_) \ V  V / (_| | | |  __/_____| |_) | | (_) | (_| |
+    |___/_| |_|\___/| .__/ \_/\_/ \__,_|_|  \___|     |_.__/|_|\___/ \__, |
+                    |_|                                              |___/
+paths:
+  - dev-ops/common/actions
+
+const:
+  DB_USER: "app"
+  CHECKOUT_DIRECTORY: '/var/www/cluster.eilomat.de'
+
+dynamic:
+  DIR: pwd
+
+environments:
+  dev:
+    paths:
+      - "dev-ops/common/actions"
+    const:
+      ENV: "dev"
+  stage:
+    paths:
+      - "dev-ops/common/actions"
+    const:
+      ENV: "stage"
